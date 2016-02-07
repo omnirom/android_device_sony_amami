@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/sony/msm
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5503,amami
 
@@ -37,6 +34,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += \
     device/sony/amami/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device \
     device/sony/amami/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    telephony.lteOnGSMDevice=1
 
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_amami
