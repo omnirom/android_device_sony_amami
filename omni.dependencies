@@ -3,6 +3,6 @@
     "remote":       "omnirom",
     "repository":   "android_device_sony_rhine-common",
     "target_path":  "device/sony/rhine-common",
-    "revision":     "android-6.0"
+    "revision":     "android-7.0"
   }
 ]
